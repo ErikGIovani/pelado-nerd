@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Oswald', sans-serif;
+}
+
+.container-header {
+    background: linear-gradient(90deg, #000000c0 0%, #000000c0 100%), url(../images/background.jpg);
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+.container-header img {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 30em;
+}
+.container-header section {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    padding: 5rem 3rem;
+}
+.container-header section h1 {
+    color: white;
+    font-size: 10em;
+    text-align: left;
+}
+.container-header section p {
+    color: white;
+    font-size: 2em;
+    text-align: left;
+}
+.container-header section div {
+    text-align: left;
+}
+.container-header section div a {
+    font-size: 3em;
+    color: white;
+    transition: 1s;
+}
+.container-header section div a:hover {
+    transition: 1s;
+    opacity: 0.5;
+}
+.container-header section div a i:hover {
+    transform: rotateY(360deg);
+    transition: 1s;
+}
+.container-header section div *+* {
+    margin-left: 2rem;
+}
+.container-cards {
+    width: 100%;
+    background: linear-gradient(90deg, #ffffffea 0%, #ffffffea 100%), url(../images/background.jpg);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    padding: 2rem 0;
+}
+.container-cards div {
+    width: 30%;
+    text-align: center;
+    padding: 1rem;
+    transition: 1s;
+}
+.container-cards div:hover {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 25px;
+    transform: rotateY(360deg);
+    transition: 1s;
+}
+.container-cards div h2 {
+    font-size: 2rem;
+}
+.container-cards div p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+.container-cards div a {
+    padding: 0.5rem 3rem;
+    background: black;
+    color: white;
+    border-radius: 25px;
+}
+.container-sponsors {
+    background: linear-gradient(90deg, #000000ea 0%, #000000ea 100%), url(../images/background.jpg);
+    width: 100%;
+    color: white;
+    padding: 1rem 6rem;
+}
+.container-sponsors h2 {
+    text-align: center;
+    font-size: 4em;
+}
+.container-sponsors p {
+    font-size: 2em;
+    margin-top: 1rem;
+}
+.container-sponsors ol {
+    margin-left: 1rem;
+    font-size: 1.5em;
+}
+.container-sponsors li {
+    margin-top: 1rem;
+}
+
+@media (max-width: 1200px) {
+    body {
+      font-size: 12px;
+    }
+}
+@media (max-width: 992px) {
+    body {
+      font-size: 10px;
+    }
+}
+@media (max-width: 768px) {
+    body {
+      font-size: 8px;
+    }
+}
+@media (max-width: 576px) {
+    body {
+      font-size: 10px;
+    }
+    .container-header {
+        height: 150vh;
+    }
+    .container-header section {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        padding: 15rem 2rem;
+    }
+    .container-header section p {
+        text-align: center;
+        font-size: 3em;
+    }
+    .container-header section i {
+        font-size: 2em;
+    }
+    .container-cards div {
+        width: 100%;
+        font-size: 12px;
+    }
+}
